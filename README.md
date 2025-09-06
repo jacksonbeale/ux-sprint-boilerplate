@@ -1,6 +1,8 @@
 # UX Sprint Boilerplate
 
-A proven framework for executing lean UX sprints with AI agent acceleration. This boilerplate provides everything you need to rapidly set up and execute user experience sprints focused on feature integration and product enhancement.
+An experimental framework for executing lean UX sprints with AI agent acceleration. This boilerplate provides everything you need to rapidly set up and execute user experience sprints focused on feature integration and product enhancement.
+
+**⚠️ Note:** This is an experimental methodology based on learnings from initial sprint projects. Results may vary, and the framework should be adapted based on your specific project needs and constraints.
 
 ## Quick Start
 
@@ -17,7 +19,7 @@ A proven framework for executing lean UX sprints with AI agent acceleration. Thi
 ### 🏗️ Complete Project Structure
 - **Agents:** Pre-configured AI agents for each sprint phase
 - **Templates:** CLAUDE.md and documentation templates  
-- **Methodology:** Proven 10-day sprint framework
+- **Methodology:** Experimental 10-day sprint framework
 - **Deliverables:** Structured outputs for stakeholders
 
 ### 🤖 AI-Powered Workflow

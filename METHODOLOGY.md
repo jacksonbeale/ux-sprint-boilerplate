@@ -2,7 +2,7 @@
 
 ## Overview
 
-This boilerplate implements a lean, agent-powered UX sprint methodology designed for rapid iteration and learning. The approach has been proven effective for integration projects where new capabilities need to seamlessly blend with existing products.
+This boilerplate implements a lean, agent-powered UX sprint methodology designed for rapid iteration and learning. The approach is experimental, based on learnings from initial integration projects where new capabilities need to seamlessly blend with existing products.
 
 ## Core Principles
 
