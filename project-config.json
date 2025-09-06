@@ -32,5 +32,8 @@
   ],
   "integration_context": "seamlessly integrates with existing product experience",
   "has_visual_validation": true,
-  "prototype_type": "HTML"
+  "prototype_type": "HTML",
+  "has_video_analysis": true,
+  "video_extraction_fps": 0.5,
+  "video_output_format": "PNG"
 }

@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+import imageio.v2 as iio
+import os
+
+def extract_frames(video_path, output_dir, fps=0.5):
+    """Extract frames from video at specified fps"""
+    os.makedirs(output_dir, exist_ok=True)
+    
+    reader = iio.get_reader(video_path)
+    
+    # Get video metadata
+    meta = reader.get_meta_data()
+    original_fps = meta['fps']
+    frame_interval = int(original_fps / fps)
+    
+    print(f"Video FPS: {original_fps}")
+    print(f"Extracting every {frame_interval} frames")
+    
+    frame_count = 0
+    extracted_count = 0
+    
+    for frame in reader:
+        if frame_count % frame_interval == 0:
+            frame_filename = os.path.join(output_dir, f"frame_{extracted_count:03d}.png")
+            iio.imwrite(frame_filename, frame)
+            print(f"Extracted frame {extracted_count}: {frame_filename}")
+            extracted_count += 1
+        frame_count += 1
+    
+    reader.close()
+    print(f"Extracted {extracted_count} frames total")
+
+if __name__ == "__main__":
+    # Configure these paths for your project
+    video_path = "assets/video/{{product_name}}/your-video.mp4"
+    output_dir = "assets/video/{{product_name}}/frames"
+    
+    # Extract one frame every 2 seconds (0.5 fps)
+    # Adjust fps parameter to extract more or fewer frames
+    extract_frames(video_path, output_dir, fps=0.5)

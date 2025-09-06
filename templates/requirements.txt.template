@@ -1,0 +1,8 @@
+# Video processing dependencies for UX research
+imageio>=2.34.0
+imageio-ffmpeg>=0.5.0
+
+# Additional dependencies can be added here based on project needs
+# For example:
+# opencv-python>=4.8.0  # For advanced video processing
+# pillow>=10.0.0       # For image manipulation
