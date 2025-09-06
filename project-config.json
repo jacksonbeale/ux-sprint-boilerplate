@@ -1,0 +1,36 @@
+{
+  "project_name": "Example UX Sprint Project",
+  "project_goal": "Define and execute a lean UX sprint to integrate new capabilities into existing product",
+  "product_name": "ProductName",
+  "company_name": "CompanyName", 
+  "capabilities": [
+    "Feature One",
+    "Feature Two", 
+    "Feature Three"
+  ],
+  "competitors": [
+    "Primary Competitor",
+    "Secondary Competitor"
+  ],
+  "business_context": "Brief description of why this project matters to the business",
+  "deliverables": [
+    "Research Summary",
+    "User Journey Maps", 
+    "Interactive Prototype",
+    "User Test Feedback",
+    "Final Presentation"
+  ],
+  "research_focus_areas": [
+    "User experience best practices",
+    "Competitive landscape analysis",
+    "User behavior patterns"
+  ],
+  "user_journey_types": [
+    "primary user flow",
+    "secondary workflow",
+    "edge cases"
+  ],
+  "integration_context": "seamlessly integrates with existing product experience",
+  "has_visual_validation": true,
+  "prototype_type": "HTML"
+}

@@ -1,0 +1,53 @@
+# {{project_name}} - Project Overview
+
+## Project Summary
+This repository contains the complete lean UX sprint for {{project_goal}}. {{business_context}}
+
+## Sprint Objectives
+- **Primary Goal**: {{project_goal}}
+- **Timeline**: 10-day compressed sprint focusing on rapid iteration and learning
+- **Scope**: {{capabilities}}
+- **Output**: Testable prototype and clear implementation roadmap
+
+## Key Deliverables
+{{deliverables_list}}
+
+## Core Principles
+- **Speed over Perfection**: Prioritize rapid iteration and learning
+- **Data-Informed Decision Making**: Use research and feedback to guide choices
+- **Agent-Powered Workflow**: Leverage specialized agents for task automation
+- **Cohesive Experience**: Ensure new features {{integration_context}}
+
+## Agent-Based Workflow
+This project uses specialized agents to automate different phases:
+- **Research Agent**: Gather and synthesize user insights
+- **Journey Mapping Agent**: Document and analyze user flows
+- **Prototyping Agent**: Create interactive prototypes
+- **User Testing Agent**: Facilitate feedback collection
+- **Summary Agent**: Compile final reports and recommendations
+
+## Directory Structure
+```
+├── agents/              # Agent definitions and instructions
+├── research/            # User research and competitive analysis
+├── journeys/            # User journey maps and flow analysis
+├── prototypes/          # Interactive prototypes and components
+├── testing/             # User testing scripts and results
+├── deliverables/        # Final reports and presentations
+├── assets/              # Images, mockups, and supporting materials
+└── docs/                # Project documentation and guides
+```
+
+## Success Metrics
+- Clear identification of user needs and pain points
+- Validated design concepts through user testing
+- Functional prototype ready for stakeholder review
+- Actionable implementation roadmap with priorities
+- Seamless integration plan with existing {{product_name}} ecosystem
+
+## Next Steps
+1. Execute research phase using Research Agent
+2. Map user journeys based on research findings
+3. Create interactive prototype for key workflows
+4. Conduct user testing sessions for validation
+5. Compile final report with implementation roadmap

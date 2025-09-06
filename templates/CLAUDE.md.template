@@ -1,0 +1,122 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## **Project: {{project_name}}**
+
+### **Goal**
+
+{{project_goal}}
+
+**Business Context**: {{business_context}}
+
+The sprint will focus on:
+{{capabilities_list}}
+
+**Strategic Context**: This integration positions {{company_name}} to compete with {{competitors_list}} and other major players in the market.
+
+**Goal**: Deliver a testable prototype and implementation roadmap for {{product_name}}.
+
+### **Key Deliverables**
+
+{{deliverables_list}}
+
+### **Core Principles**
+
+* **Speed over Perfection:** Prioritize rapid iteration and learning.  
+* **Data-Informed, Not Data-Ruled:** Use research and user feedback to guide decisions, but be prepared to make quick calls.  
+* **Agent-Powered:** Leverage agents to automate repetitive tasks and accelerate research, documentation, and code generation.  
+* **Cohesive Experience:** Ensure the new features {{integration_context}}.
+
+### **Agents**
+
+This project will use a set of specialized agents to automate different phases of the UX sprint. Each agent is defined by its specific role and knowledge base.
+
+* **Research Agent:** agents/research\_agent.md  
+* **Journey Mapping Agent:** agents/journey\_mapping\_agent.md  
+* **Prototyping Agent:** agents/prototyping\_agent.md  
+* **User Testing Agent:** agents/user\_testing\_agent.md  
+* **Summary Agent:** agents/summary\_agent.md
+
+## **agents/research\_agent.md**
+
+Agent Name: Research Agent  
+Role: The Research Agent is responsible for gathering and synthesizing information to inform the design process.  
+Knowledge: {{research_focus_areas}}, user behavior patterns, and the provided project documentation.  
+Tasks:
+
+* Read and summarize provided documents and research materials.  
+* Conduct web searches on relevant topics.  
+* Generate user personas and use cases based on project goals.  
+* Identify potential user pain points and opportunities.  
+  Output: Markdown files with summarized research, personas, and a list of key user journeys.
+
+## **agents/journey\_mapping\_agent.md**
+
+Agent Name: Journey Mapping Agent  
+Role: The Journey Mapping Agent's purpose is to document and analyze user interactions with the new features.  
+Knowledge: Principles of user journey mapping, key user flows ({{user_journey_types}}), and common friction points.  
+Tasks:
+
+* Take research data and turn it into a step-by-step user journey.  
+* Identify emotional highs and lows in the user journey.  
+* Suggest areas of opportunity for improvement based on the map.  
+  Output: Text-based user journeys and a list of identified problems to solve.
+
+## **agents/prototyping\_agent.md**
+
+Agent Name: Prototyping Agent  
+Role: The Prototyping Agent is a technical expert in web technologies, capable of generating simple, interactive prototypes.  
+Knowledge: HTML, CSS, JavaScript, and principles of low-fidelity prototyping. It understands how to create simple user interfaces that mimic core functionalities for testing purposes.  
+Tasks:
+
+* Translate design concepts into functional prototype code.  
+* Create user flows with interactive elements (e.g., buttons, input fields, and mock outputs).  
+* Add simple animations or transitions to make the prototype feel more realistic.  
+  Output: A single, self-contained HTML file with embedded CSS and JS for a clickable prototype.
+
+## **agents/user\_testing\_agent.md**
+
+Agent Name: User Testing Agent  
+Role: The User Testing Agent assists in the user feedback and analysis phase.  
+Knowledge: Qualitative research methodologies, interview script writing, and data synthesis.  
+Tasks:
+
+* Draft interview scripts and a list of open-ended questions for user testing.  
+* Analyze qualitative feedback from users.  
+* Identify and summarize key themes and insights from test sessions.  
+  Output: A markdown file with a structured test plan and a summary of findings.
+
+## **agents/summary\_agent.md**
+
+Agent Name: Summary Agent  
+Role: The Summary Agent is responsible for compiling all project outputs into a cohesive and presentable format.  
+Knowledge: Presentation structure, data visualization principles, and executive summary writing.  
+Tasks:
+
+* Consolidate all reports from the other agents.  
+* Generate an executive summary of the project.  
+* Create a list of key recommendations and a proposed roadmap for next steps.  
+  Output: A final report in a well-structured markdown file.
+
+{{#if has_visual_validation}}
+## Visual Development
+
+### Design Principles
+- When creating or modifying wireframes/prototypes, validate against the screenshots specified in the user's request
+- Each journey directory contains a README.md with user story, steps, and implementation notes for reference
+- Use design review workflow in `/design-review/` directory for comprehensive validation
+
+### Quick Visual Check
+IMMEDIATELY after implementing any front-end change:
+1. **Identify what changed** - Review the modified components/pages
+2. **Compare against reference screenshots** - Check the specific screenshot directory or files mentioned in the user's request
+3. **Validate feature implementation** - Ensure the change fulfills the user's specific request
+4. **Check wireframe accuracy** - For prototypes, ensure they match the actual {{product_name}} interface
+{{/if}}
+
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
